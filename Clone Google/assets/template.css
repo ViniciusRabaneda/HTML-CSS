@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    margin:0px 20px;
+
+}
+.item_cabecalho{
+    padding: 10px;
+}
+.logo{
+    padding: 10px;
+    border-radius: 50%;
+}
+header{
+    margin-bottom: 80px;
+    
+}
+.logo_google{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.pesquisa{
+    display: flex;
+    justify-content: center;
+}
+.area_pesquisa{
+    display: flex;
+    justify-content: space-between;
+    width:500px;
+}
+input{
+    width: 500px;
+    border-width: 1px;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sorte{
+    margin-right: 20px;
+    padding:5px
+}
+.disponivel{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+footer{
+    margin-top:200px;
+}
+.rodape_1, .rodape_2{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  
+}
+a {
+    text-decoration: none;
+    margin:4px 20px;
+    color: black;
+}
