@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1 id="titulo">Matricula</h1>
+    </div>
+    <form action="" method="post">   <!-- Comentario shif + alta + A -->
+        <fieldset>
+            <div class="container_nome">
+                <div class="nome"> 
+                    <label for="nome_usuario">Nome</label>
+                    <input type="text" name="nome_usuario" id="nome_usuario">    
+                </div>
+                <div class="sobrenome">           
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome_usuario" id="sobrenome">
+                </div>   
+            </div>
+            <div class="container_email">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email_usuario" value="seuemail@gmail.com.br" id="email"> 
+                </div> 
+                <div class="nascimento">
+                    <label for="data">Data Nascimento</label>
+                    <input type="date" name="data_nascimento" id="data">
+                </div>
+            </div>
+            <div class="sexo">
+                <label for="sexo">Sexo usuário</label>
+                <label class="radio_nome">Masculino</label> 
+                <input class="rad1" type="radio" name="sexo" id="sexo">
+                <label class="radio_nome">Feminino</label> 
+                <input class="rad1" type="radio" name="sexo">
+            </div>    
+        </fieldset>
+        <fieldset id="container_curso">      
+            <div>
+                <label class="curso">Curso</label>
+                <select name="curso">
+                    <option>Engenharia de Produção</option>
+                    <option>Quimica</option>
+                    <option>Física</option>
+                    <option>Geografia</option>
+                    <option>Engenharia da computação</option>
+                    <option>Turismo</option>
+                </select>
+            </div>
+            <div class="area">
+                <label>Qual materia você mais gosta e porquê?</label>
+                <textarea class="motivo" name="descricao_usuario">Digite aqui</textarea>  
+            </div>
+        </fieldset>      
+        <button> Enviar Cadastro</button>     
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    margin:0% 30%;
+    background-color: aqua;
+    font: 16px arial;
+    
+
+}
+.container_nome{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+input{
+    margin-bottom: 5px;
+}
+.rad1{
+    display: inline;
+}
+.nascimento{
+    display: inline;
+}
+.container_email{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+fieldset{
+    margin: 5px;
+    justify-content: center;
+    border: 0px;
+}
+#data{
+    width: 170px;
+}
+.curso{
+    display: block;
+}
+select{
+    margin-bottom: 15px;
+}
+textarea{
+    width: 320px;
+    resize: none;
+    margin-top: 10px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+h1{
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.radio_nome{
+    font: 13px arial;
+    font-weight: lighter;
+    display: inline;
+    margin-bottom: 20px;
+}
