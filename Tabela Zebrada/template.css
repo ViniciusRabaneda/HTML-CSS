@@ -1,0 +1,10 @@
+tr:nth-child(2n+3){ /* nessa linha o n varia até o infinito comçando no zero. 
+                    2n + 1 é a mesma coisa que 2x0 + 3 ,ou seja to sempre somando 2 a um numero impar.*/
+    background-color: gray;
+}
+tr:nth-child(even){
+    background-color: blue;
+}
+.cabecalho{
+    background-color: red;
+}
