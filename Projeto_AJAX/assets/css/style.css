@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    overflow-x:hidden ; /* Evita que o conteudo na horizontal excedente seja mostrado */
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: black;
+    height: 100px;
+}
+.header{
+    display: flex;
+    background-color: black;
+    width: 1140px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    margin-left: 20px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    margin-right: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    margin-left: 25px;
+    color: white;
+    font-weight: 600; /* Nao existe a opção semi-bold, importei junto com o nome o numero que irei usar */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom:6px solid black;
+}
+.menu li a:hover{
+   border-bottom:6px solid #b28756 ;
+}
+.button {
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.logo{
+    margin-left: 10px;
+}
+.banner{
+    height:calc(100vh - 100px); /* Estou calculando o tamanho da tela toda (100vh) e subtraindo o tamanho do cabeçalho com a função calc */
+    background-color: #333;
+    background-image: url(../images/bg.jpg); /* .. volta pasta */
+    background-size: cover; /* Estou ajustando o tamanho da imagem de acordo com o tamanho da tela */
+    background-position:bottom;/* Imagem fica ajustada na parte inferior da tela */
+    overflow: hidden; /* "Esconde" todo o conteudo que ficar fora das dimensões do banner */
+}
+.banner .sliders{
+   width: 1000vw; 
+   height: 100%;
+}
+.banner .slide{
+    width:100vw;
+    height:100%;
+    display:inline-block;
+   background-color: rgba(0 ,0 ,0 , 0.8);
+}
+.banner .slidearea{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold   ;
+    font-size: 50px;
+}
+.banner h1 span{
+    color:#b28756 ;
+}
+.banner h2{
+    text-transform: uppercase ;
+    margin-top: 20px ;
+}
+.banner .sliders-pointers{
+    width:100vw;
+    height: 20px;
+    position: absolute; /* Foi um recurso necessário para os pontos aparecerem uma vez que o sliders estava com height 100% e pointers estava abaixo (nao aparecia) */
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+.banner .pointer.active{
+    background-color: #b28756;
+}
+
+.default{
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.default .section-title,
+.default .section-desc{
+     text-align: center;
+     font-weight: 600;
+}
+.default .section-title{
+    font-size: 20px;
+}
+.default .section-desc{
+    font-size: 12px;
+    color: #CCC;
+    margin-top:13px ;
+    margin-bottom: 40px;
+}
+.default .section-body{
+    max-width:1140px;
+    margin:auto;
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default.light .section-title,
+.default.light .section-body
+{
+    color: black;
+}
+.default.dark{
+    background-color: black;
+}
+.default.dark .section-title,
+.default.dark .section-body
+{
+    color: #CCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CSS de areas especificas */
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus-left{
+    flex:1;
+}
+.section-aboutus-left p{
+    font-size:14px;
+    line-height: 25px;
+}
+.section-aboutus-right{
+    width:500px;
+    text-align:center;
+
+}
+.section-aboutus-right img {
+    width:480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.section-services{
+    display: flex;
+}
+.section-service{
+    flex:1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+.section-service:first-child{ /* Usei o first child para aplicar efeito da divisoria somente no primeiro item da classe section-service */
+    border-left: 1px solid #333;
+}
+.section-service h4{
+    margin-top: 20px;
+    text-transform:uppercase;
+    font-size: 18px;
+}
+.section-service p{
+    margin-top: 10px;
+    font-size: 13px;
+    color:#999
+}
+
+
+
+
+.section-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.section-projects-filters{
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+.section-projects-filters ul,
+.section-projects-filters li{
+    list-style:none ;
+}
+.section-projects-filters li{
+    display: inline-block;
+    padding:10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #CCC;
+    color:#555;
+    border-bottom: 3px solid #EEE;
+    cursor: pointer;
+}
+.section-projects-filters li:hover,
+.section-projects-filters li.active
+{
+    border-bottom:3px solid #b28756 ;
+}
+.section-projects-filters li:nth-child(1){ /* Poderia ter usado o first-child , mas dessa forma ganho mais liberdade para outras alterações na ordem dos itens */
+    border-left: 0;
+
+}
