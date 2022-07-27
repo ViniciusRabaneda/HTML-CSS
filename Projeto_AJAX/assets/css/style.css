@@ -22,7 +22,7 @@ header{
 .header{
     display: flex;
     background-color: black;
-    width: 1140px;
+    max-width: 1140px;
     justify-content: space-between;
     align-items: center;
 }
@@ -222,9 +222,8 @@ header{
 
 .section-projects{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-
 }
 .section-projects-filters{
     border: 1px solid #CCC;
@@ -255,5 +254,28 @@ header{
 }
 .section-projects-filters li:nth-child(1){ /* Poderia ter usado o first-child , mas dessa forma ganho mais liberdade para outras alterações na ordem dos itens */
     border-left: 0;
+}
 
+.section-projects-photos{
+    width:100vw;
+    max-width: 1140px; /* Para monitores menores as imagens cobrem a tela toda. Já para monitores maiores o limite maximo que as imagens podem cobrir é 1140px */
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar a linha para ajustar o conteudo da imagem */
+    justify-content: center;    
+}
+.section-projects-photo{
+    width: 280px;
+}
+.section-projects-photoarea{
+    margin:10px;
+    width: 260px; /* OS 280px da classe a cima menos os 20px da margem (10px para direita e 10px para esquerda */
+    height: 160px;
+}
+.section-projects-photoarea img{
+    width: inherit; /* herda o valor do item anterior no caso do photoarea*/
+    height: inherit;
+}
+.section-projects-photoinfo{
+    display: none;
 }
