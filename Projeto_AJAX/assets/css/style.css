@@ -271,11 +271,32 @@ header{
     margin:10px;
     width: 260px; /* OS 280px da classe a cima menos os 20px da margem (10px para direita e 10px para esquerda */
     height: 160px;
+    cursor: pointer;
 }
 .section-projects-photoarea img{
-    width: inherit; /* herda o valor do item anterior no caso do photoarea*/
+    width: inherit; /* herda o valor do item anterior no caso do photoarea |Varia de acordo com a disposição dos elementos no HTML|*/
     height: inherit;
 }
 .section-projects-photoinfo{
-    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    height: inherit;
+    width: inherit;
+    display: none;   /* Para ficar "escondido por padrão até passar o mouse */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section-projects-photoinfo h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+.section-projects-photoinfo p{
+    justify-content: center;
+    max-width:inherit;
+    text-align:center;
+}
+.section-projects-photoarea:hover .section-projects-photoinfo{
+    display: flex;
 }
